@@ -1,0 +1,15 @@
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.inline {
+  display: inline;
+}
+
+.left {
+  margin-left: 1.2rem;
+}

@@ -1,13 +1,115 @@
-body {
+:root {
+  --color-primary: #dfe6ec86;
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: "Rubik", sans-serif; */
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+
+  /* Given Default */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.2rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 2.4rem;
+}
+
+.card {
+  background: white;
+  border-radius: 11px;
+  padding: 2.4rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 2fr 2fr 1fr; */
+  grid-template-columns: minmax(40rem, 1fr) minmax(40rem, 1fr) 30rem;
+  gap: 2.4rem;
+}
+
+.grid--span-3 {
+  grid-column: span 3;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Given Default */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* 1200px */
+@media (max-width: 75em) {
+  .grid {
+    grid-template-columns: minmax(30rem, 1fr);
+  }
+
+  .grid--span-3 {
+    grid-column: span 1;
+  }
+}
+
+/* 720px */
+@media (max-width: 45em) {
+  html {
+    /* font-size: 8px; */
+    font-size: 56.25%;
+  }
+}
+
+/* 560px */
+@media (max-width: 35em) {
+  html {
+    /* font-size: 8px; */
+    font-size: 50%;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
 }

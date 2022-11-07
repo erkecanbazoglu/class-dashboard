@@ -1,0 +1,78 @@
+.header {
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+
+.stealth {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.pageName {
+  font-size: 1.6rem;
+  margin-left: 3.2rem;
+  border-bottom: 3px solid rgba(53, 222, 140, 0.9);
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 1.8rem 0;
+  text-decoration: none;
+}
+
+.pageLink:link,
+.pageLink:visited {
+  color: inherit;
+}
+
+.flexRow {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 2.8rem !important;
+  height: 2.8rem !important;
+  color: #366ba1;
+}
+
+.icon:not(:first-child) {
+  margin-left: 1.2rem;
+}
+
+.avatar {
+  height: 4rem !important;
+  width: 4rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 560px */
+@media (max-width: 35em) {
+  .stealth {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .pageName {
+    font-size: 1.4rem;
+    margin-left: 1.6rem;
+  }
+
+  .icon {
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    color: #366ba1;
+  }
+
+  .icon:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  .avatar {
+    height: 3.6rem !important;
+    width: 3.6rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+}

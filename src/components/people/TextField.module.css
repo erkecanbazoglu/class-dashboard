@@ -1,0 +1,22 @@
+.fullName {
+  position: relative;
+}
+
+.fullName input {
+  background: var(--color-primary);
+  font-size: 1.4rem;
+  border-radius: 50rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  box-shadow: 0 0.6rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translate(-1.4rem, -50%);
+}

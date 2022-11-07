@@ -1,3 +1,5 @@
+/* --------- Given Default --------- */
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* --------- New --------- */
+
+.page {
+  background: var(--color-primary);
+  padding: 1.6rem;
+  min-height: 100vh;
 }

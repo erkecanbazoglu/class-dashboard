@@ -1,0 +1,47 @@
+.flexList {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: no-wrap !important;
+  scroll-behavior: smooth;
+  /* cursor: grab; */
+
+  display: flex;
+}
+
+.addCard {
+  width: 20rem;
+  background: white;
+  border-radius: 11px;
+  padding: 0;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.1);
+  margin-right: 0;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addBtn {
+  background: white;
+  border: none;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addBtn:hover {
+  color: #333;
+  margin-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.btnIcon {
+  margin-left: 0.8rem;
+}

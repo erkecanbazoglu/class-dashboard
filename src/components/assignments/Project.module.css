@@ -1,0 +1,25 @@
+.projectCard {
+  width: 20rem;
+  /* height: 24rem; */
+  background: var(--color-primary);
+  border-radius: 11px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.1);
+  margin-right: 1.2rem;
+  flex-shrink: 0;
+}
+
+.title {
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.graph {
+  padding: 1.2rem 0;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
