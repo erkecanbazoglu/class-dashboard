@@ -1,4 +1,4 @@
-# Story App
+# Dashboard App
 
 Dashboard web application developed with React Js.
 
