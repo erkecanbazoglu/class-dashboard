@@ -77,11 +77,25 @@ p {
   text-align: center;
 }
 
+body.active-modal {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
 /* Given Default */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* MEDIA QUERIES */
 
 /* 1200px */
 @media (max-width: 75em) {

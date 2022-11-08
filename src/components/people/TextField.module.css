@@ -1,3 +1,7 @@
+.search-form {
+  z-index: -1;
+}
+
 .fullName {
   position: relative;
 }
@@ -19,4 +23,11 @@
   right: 0;
 
   transform: translate(-1.4rem, -50%);
+}
+body.active-modal .search-form {
+  pointer-events: none;
+}
+
+body.active-modal .fullName input {
+  pointer-events: none;
 }

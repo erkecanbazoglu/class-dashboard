@@ -43,7 +43,7 @@ function Settings() {
         </div>
 
         <div className={styles.subsection}>
-          <p>Last change: {date.toLocaleString("tr-TR")}</p>
+          <p>Last change: {date.toLocaleDateString("tr-TR")}</p>
         </div>
       </section>
     </div>

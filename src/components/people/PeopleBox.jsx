@@ -6,6 +6,7 @@ function PeopleBox(props) {
     return (
       <div className={styles.flexRow}>
         <Avatar
+          key={index}
           className={styles.avatar}
           src={peopleItem.profileImg}
           alt="Avatar image"

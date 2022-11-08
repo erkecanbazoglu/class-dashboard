@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { UserData } from "./Data";
+import DeleteIcon from "@mui/icons-material/Delete";
 import filled from "../../images/filled.png";
 import empty from "../../images/empty.png";
 import styles from "./Project.module.css";
@@ -27,12 +28,20 @@ function Project(props) {
     ],
   });
 
+  function deleteProject() {
+    console.log(props.index);
+    props.deleteItem(props.index);
+  }
+
   return (
     <div className={styles.projectCard}>
-      <h3 className={styles.title}>
-        Project {props.index}
-        {props.item.name ? " - " + props.item.name : ""}
-      </h3>
+      <div className={styles.flexRow}>
+        <h3 className={styles.title}>
+          Project {props.index}
+          {props.item.name ? " - " + props.item.name : ""}
+        </h3>
+        <DeleteIcon className={styles.icon} onClick={deleteProject} />
+      </div>
       <img
         className={styles.graph}
         src={props.item.status === "Completed" ? filled : empty}
